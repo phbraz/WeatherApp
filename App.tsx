@@ -3,6 +3,7 @@ import { StyleSheet, Text, View } from 'react-native';
 import { TamaguiProvider, createTamagui } from '@tamagui/core'
 import { config } from "@tamagui/config/v3";
 import { TestPage } from "./src/views/TestPage";
+import { WeatherView } from "./src/views/Weather";
 
 const tamaguiConfig = createTamagui(config);
 
@@ -15,7 +16,7 @@ export default function App() {
   return (
       <TamaguiProvider config={tamaguiConfig}>
         <View style={styles.container}>
-          <TestPage />
+          <WeatherView />
           <StatusBar style="auto" />
         </View>
       </TamaguiProvider>
